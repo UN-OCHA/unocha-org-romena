@@ -1,0 +1,264 @@
+/* $Id: nice_menus_default.css,v 1.10 2010/10/09 16:58:04 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+ul.nice-menu {
+  width: 980px; /* width of the 1st level menu horizontal line */
+  float: left;
+  font-size: 12px; 
+}
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.nice-menu li, ul.nice-menu li .nolink {
+  border-right: 1px solid #fff;
+  border-top: 0;
+  float: left; /* LTR */
+  text-align: center;
+  width:162px; /* for 6 menu items */
+}
+ul.nice-menu li.last .nolink {
+  border-right: 0px solid #fff;
+}
+ul.nice-menu li,
+ul.nice-menu li a:link,
+ul.nice-menu li a:visited {
+  color:#fff;
+  font-size:13px;
+  font-weight:bold;
+  text-transform:uppercase;
+  line-height:250%;
+}
+ul.nice-menu li.menuparent:hover {
+  top:1px;
+  color: #fff;
+  border-right: 1px solid #b17e41;
+  border-left: 1px solid #b17e41;
+  border-top: 1px solid #b17e41;
+}
+ul.nice-menu li.menuparent:hover .nolink {
+  color: #b17e41;
+  font-size:13px;
+  font-weight:bold;
+  cursor:default;
+  border-right:1px solid #b17e41;
+  /*border-bottom: 2px solid #b17e41;*/
+}
+ul.nice-menu li.menuparent.last:hover .nolink {
+  border-right:0px solid #b17e41;
+}
+ul.nice-menu li.menuparent ul li a:link,
+ul.nice-menu li.menuparent ul li a:visited,
+ul.nice-menu li.menuparent ul li a:active,
+ul.nice-menu li.menuparent ul li a:hover {
+  width: 135px;
+  padding:5px 5px 5px 15px;
+  color: #b17e41;
+  font-size:12px;
+  font-weight:bold;
+  line-height:150%;
+  border:1px;
+  text-transform: capitalize;
+  text-align:left;
+}
+
+ul.nice-menu a {
+  padding: 0em 0px;
+}
+
+ul.nice-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  border: 0;
+  border-top: 0px solid #b17e41;
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu ul li {
+  width: 12.5em;
+}
+
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+  float: left; /* LTR */
+  border: 0;
+  line-height:32px;
+}
+
+ul.nice-menu-down li {
+  border-top: 1px solid #fff;
+}
+
+ul.nice-menu-down li.last {
+  width:164px;
+  border-right: 1px solid #b17e41; /* fix for last menu item */
+}
+
+ul.nice-menu-down li li {
+  border-top: 0;
+}
+
+ul.nice-menu-down ul {
+  left: 0; /* LTR */
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+}
+
+ul.nice-menu-down li ul li ul {
+  left: 12.5em; /* LTR */
+  top: -1px;
+}
+
+/******************************
+ Garland-specific CSS
+******************************/
+
+/**
+ * Global CSS for ALL menu types
+ */
+ul.nice-menu li {
+  margin: 0;
+  padding-left: 0; /* LTR */
+  background-image: none;
+}
+
+#header-region ul.nice-menu li.menuparent:hover {
+  margin-left: -1px;
+}
+
+#header-region ul.nice-menu li {
+  margin: 0;
+  /* Padding rules are needed to deal with Garland's header line-height. */
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+#header-region ul.nice-menu ul {
+  top:33px;
+  width:162px;
+  left: -1px; /* LTR */
+  margin-right: 0; /* LTR */
+  border-right: 1px solid #b17e41;
+  border-left: 1px solid #b17e41;
+  border-bottom: 1px solid #b17e41;
+}
+#header-region ul.nice-menu ul li {
+  width:162px;
+  background-color: #fff;
+  border-right: 1px solid #b17e41;
+}
+
+#header-region ul.nice-menu li.last ul li {
+  width:164px;
+  background-color: #fff;
+  border-right: 1px solid #b17e41;
+}
+
+/**
+ * HORIZONTAL (down) menus
+ */
+#header-region ul.nice-menu-down li ul li ul {
+  left: 12.5em; /* LTR */
+}
+#header-region ul.nice-menu-down li.menuparent {
+  background:url(/sites/default/files/images/regional_menu_bar.jpg); /* LTR */
+}
+
+#header-region ul.nice-menu-down li.menuparent:hover {
+  background: #fff; /* LTR */
+}
+#header-region ul.nice-menu-down li.menu-path-node-1 {
+  background:url(/sites/default/files/images/regional_menu_bar.jpg); /* LTR */
+}
+
+
+
+/******************************
+ OCHA Top  menu
+******************************/
+#header-region {
+  width:980px;
+  position: relative;
+  z-index:100;
+}
+#block-menu_block-1 {
+  width:300px;
+  float:right;
+  background:url(/sites/default/files/images/home_icon_1.jpg) no-repeat 0px -2px;
+  position:absolute;
+  top:-33px;
+  right:200px;
+}
+.menu-name-menu-ocha-top-menu ul.menu {
+  padding:0;
+  margin:0;
+  list-style:none;
+  float:right;
+  height:20px;
+}
+.menu-name-menu-ocha-top-menu ul.menu li {
+  margin:0;
+  float:left;
+}
+.menu-name-menu-ocha-top-menu ul.menu li.leaf {
+  list-style-type:none;
+  list-style-image:none;
+  padding:0 7px;
+  font-size:11px;
+  color:#fff;
+  border-right:1px solid #fff;
+  line-height:13px;
+}
+.menu-name-menu-ocha-top-menu ul.menu li.last {
+  border-right:0px solid #fff;
+}
+.menu-name-menu-ocha-top-menu ul.menu li.leaf a {
+  font-size:11px;
+  color:#fff;
+}
+#block-search-0 {
+  width:180px;
+  float:right;
+  position:absolute;
+  top:-35px;
+  right:35px;
+}
+#search-block-form {
+  float:right;
+}
+#block-search-0 label {
+  display:none;
+}
+#edit-search-block-form-1-wrapper input {
+  height:14px;
+  width:115px;
+}
+#search-block-form input.form-submit {
+  margin:-2px 0 0 3px;
+}
+.form-item#edit-search-block-form-1-wrapper {
+  margin:0;
+  float:left;
+}
+

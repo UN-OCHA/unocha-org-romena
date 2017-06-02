@@ -1,0 +1,6 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME: Calendar | Middle East and North Africa
+PRODID:-//Drupal iCal API//EN
+END:VCALENDAR

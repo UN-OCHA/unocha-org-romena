@@ -1,0 +1,437 @@
+/* Global */
+body {
+  background-color: #6090C0;
+}
+#main {
+  background-color: #fff;
+}
+#content-inner {
+  margin: 10px 25px;
+}
+.not-front #content-area {
+  padding-top: 10px;
+  border-top:#eeeeee 1px solid;
+}
+div.view div.views-admin-links {
+  width:180px;
+}
+.not-front .tabs{
+  padding-top: 10px;
+}
+/* Basic Typography */
+h2 {
+  font-size:15px;
+  font-weight:bold;
+}
+h3 {
+  font-size:13px;
+  font-weight:bold;
+}
+a, a:link, a:visited{
+  color: #296ab3;
+}
+a:hover {
+  color: #ec0000;
+}
+.breadcrumb {
+  font-size:11px;
+}
+table {
+  border-collapse: separate;
+} 
+/* Header */
+#header {
+  background-color: #fff;
+}
+#logo-title {
+  background:url(/sites/default/files/images/UNOCHA_banner_CountryField1.jpg) repeat-x #FFF;
+  height:96px;
+}
+#logo {
+  width:175px;
+  height:45px;
+  margin-top: 15px;
+  margin-right:35px;
+  float: right;
+}
+#site-name {
+  width: auto;
+  float: left;
+  margin-left: 22px;
+  margin-top: 24px;
+  font:50px arial,verdana;
+  color: #fff;
+  height:auto;
+}
+#site-name a:link,
+#site-name a:visited,
+#site-name a:hover,
+#site-name a:active {
+  color: #fff;
+  text-decoration:none;
+}
+h1#site-name {
+  padding: 0;
+}
+
+/* Footer */
+#footer {
+  height:120px;
+  background-color: #eee;
+  border-top:10px solid #003366;
+}
+#footer .content {
+  padding-top:25px;
+  text-align: center;
+}
+#footer a, #footer a:visited {
+  color: #296ab3;
+  font-size:11px;
+}
+#footer a.login_link {
+  color:#eee;
+}
+
+/* Panel Front Page */
+.panel-front-top {
+  padding:20px 0 30px;
+}
+.panel-front-top-region {
+  margin-left:32px;
+  width:180px;
+  font-size:11px;
+  line-height:13px;
+}
+.panel-front-bottom-region {
+  padding: 15px;
+}
+.panel-front-bottom {
+  padding:0px 0 30px 0;
+}
+#panel-top-story.panel-pane {
+  width:500px;
+  height:375px;
+  position:relative;
+}
+#top-story-transparency {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 500px;
+  height: 100px;
+  background-color: #eeeeee;
+  filter:alpha(opacity=82);
+  -moz-opacity:0.82;
+  -khtml-opacity: 0.82;
+  opacity: 0.82;
+}
+#top-story-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #000;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 10px;
+}
+.top-story-blue-title, 
+.top-story-blue-title a, 
+.top-story-blue-title a:visited {
+  font-size: 16px;
+  font-weight:bold;
+  margin-bottom: 4px;
+}
+#panel-top-story.panel-pane .more-link, 
+#panel-top-story.panel-pane .more-link a, 
+#panel-top-story.panel-pane .more-link a:visited {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  width:150px;
+  font-size:11px;
+}
+.panel-front-top-region {
+  margin-left:32px;
+  width:180px;
+  font-size:11px;
+  line-height:13px;
+}
+#panel-front-top-box.panel-pane .views-field-edit-node,
+#panel-front-top-box.panel-pane .views-field-edit-node a,
+#panel-front-top-box.panel-pane .views-field-edit-node a:visited {
+  margin-top:-20px;
+  /*color:#FFF;*/
+}
+#panel-front-top-box.panel-pane {
+  margin-bottom:10px;
+  height:178px;
+}
+#panel-front-top-box .views-field-phpcode,
+.panel-front-bottom .views-field-phpcode {
+  text-align:center;
+}
+.reliefweb-map-block .views-field-phpcode {
+  height: 140px;
+}
+#panel-front-top-box-usg.panel-pane {
+  margin:-52px 0px 5px 0;
+  height:43px;
+}
+.panel-front-bottom .rounded-corner .wrap-corner .r-edge{
+  height:280px;
+  padding:2px 13px;
+}
+.panel-front-bottom h2.block-title {
+  padding-top:5px;
+}
+.panel-front-bottom .views-field-body,
+.panel-front-bottom .view-content {
+  font-size:12px;
+  line-height:150%; 
+}
+.panel-front-bottom .views-field-field-more-link-url, 
+.panel-front-bottom  .more-link {
+  position: absolute; 
+  bottom: -5px;
+  width: auto;
+  right: 10px;
+  font-size:10px;
+}
+.panel-front-bottom .views-field-field-image-file-fid {
+  text-align:center;
+}
+
+/* Panel General Content */
+h1.title {
+  color:#296ab3;
+  font-size:18px;
+  font-weight:bold;
+  padding-top:5px;
+  width:750px;
+}
+.content-header {
+  width:110px;
+  height:20px;
+  float:right;
+  margin-top:-22px;
+}
+.content-header .block-addtoany {
+  width: 60px;
+  float:left;
+}
+.content-header .block-addtoany .block-inner {
+  background: url('/sites/default/files/images/unocha_sprite.png') no-repeat -184px -144px;
+  width: 12px;
+  height: 12px;
+}
+.content-header .block-addtoany a, .content-header .block-addtoany a:visited {
+  padding-left:15px;	
+  font-size:11px;
+  font-weight:bold;
+  color:#999;
+}
+.content-header .block-print {
+  width: 50px;  
+  float:left;
+}
+.content-header .block-print .block-inner {
+  background: url('/sites/default/files/images/unocha_sprite.png') no-repeat -164px -144px;
+  width: 12px;
+  height: 12px;
+}
+.content-header .block-print .content a, .content-header .block-print .content a:visited {
+  padding-left: 2px;	
+  font-size:11px;
+  font-weight:bold;
+  color:#999;
+}
+#panel-content-body.panel-pane {
+  padding-right:20px;
+  border-right:#eeeeee 1px solid;
+}
+.image-caption {
+  padding: 7px;
+  font-size: 11px;
+  font-weight:100;
+  line-height: 12px;
+  margin-top: -3px;
+  text-align: left;
+}
+.image-caption-container {
+  position:relative; !important;
+  margin:10px;
+  padding:5px;
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width:auto;
+} 
+.rounded-box-orange {
+  position:relative; !important;
+  margin:5px;
+  padding:10px;  
+  border: 1px solid #b17e41;
+  background: #FEF8F3;  
+  -webkit-border-radius: 5px;  
+  -moz-border-radius: 5px;  
+  border-radius: 5px;  
+}
+.rounded-box-gray {
+  position:relative; !important;
+  margin:5px;
+  padding:15px;  
+  border: 1px solid #ccc;
+  background: #EFEFEF; 
+  -webkit-border-radius: 5px;  
+  -moz-border-radius: 5px;  
+  border-radius: 5px;  
+}
+.rounded-box-gray .views-field-field-image-file-fid,
+.rounded-box-gray .views-field-phpcode,
+.rounded-box-gray .field-field-image-file {
+  text-align:center;
+}
+.panel-front-bottom .view-page-block-web-service-views .views-field-phpcode, 
+.rounded-box-gray .view-page-block-web-service-views .views-field-phpcode {
+  text-align:left;
+}
+.rounded-box-gray .more-link {
+  position:absolute;
+  bottom:2px;
+  right:5px;
+  font-size:11px;
+}
+#panel-content-body.panel-pane .field-field-location {
+  width:auto;
+  float:left;
+  margin:0 20px 7px 0;
+}
+.openlayers-container-preset-ocha_map_country_page {
+  background:#fafafa;
+}
+#panel-content-body.panel-pane .field-field-location .field-items {
+  width:200px;
+  height:260px;
+  padding:0.5em;
+  border:1px solid #EDEDED;
+}
+/* Panel Publication Content */
+#panel-publications-list.panel-pane .views-field-title {
+  font-weight:bold;
+  height:50px;
+  padding:10px 20px;
+  text-align:left;
+}
+#panel-publications-list.panel-pane .views-field-body, 
+#panel-publications-list.panel-pane .views-field-field-published-date-value {
+  padding:0 20px;
+  text-align:left;
+  font-size:11px;
+}
+UL.views-fluid-grid-items-border-radius LI.views-fluid-grid-item {
+  position:relative; !important;
+}
+/* Panel Content */
+.openlayers-views-map {
+  background:#FAFAFA;	
+}
+#panel-maps-list.panel-pane .field-content img {
+  padding-top:15px;
+}
+#panel-maps-list.panel-pane .views-field-title {
+  padding:0 15px;
+  text-align:left;
+  line-height:15px;
+  font-size:11px; 
+}
+#panel-multimedia-list.panel-pane .field-content img {
+  padding-top:15px;
+}
+#panel-multimedia-list.panel-pane .views-field-title {
+  padding:0 15px;
+  text-align:left;
+  line-height:15px;
+  font-size:11px; 
+}
+#panel-multimedia-list.panel-pane .views-field-created {
+  font-size: 11px;
+  padding: 0 15px;
+  text-align: left;
+}
+.view .image-gallery-terms li {
+  border:0px;
+}
+.panel-region-separator {
+  padding:2px 0;
+}
+.panel-country-map.panels-flexible-row {
+  width:217px;
+  float:right;
+}
+.docheader {
+  color:#FFF;
+  font-weight:bold;
+}
+.docheaderbkg {
+  background-color:#235c9c;
+  padding:3px;
+}
+.docbkg {
+  background-color:#F3F3F3;
+  padding:3px;
+}
+div.olMapViewport div.olControlAttribution {
+  bottom:2px;
+  left:2px;
+  right:auto;
+  visibility:hidden;
+}
+.pane-plain-box-gray-box .pane-title {
+  background-color:#EEEEEE;
+}
+.node-type-story_top_stories .field-field-image-file, .node-type-story_top_stories .field-field-image {
+    background-color: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin: 5px 20px 5px 5px;
+    padding: 5px;
+    width: 250px;
+}
+.node-type-story_top_stories .field-field-image img.imagecache-front_page {
+    height: 230px;
+    width: 250px;
+}
+.attachment-after .views-field-field-more-link-url {
+  text-align:right;
+}
+
+/* Search */
+.search-result {
+  padding:2px 5px;
+}
+.search-result .title {
+  font-weight:bold;
+}
+.search-results .odd {
+  background-color:#F3F3F3;
+}
+
+/* Calendar */
+.calendar-mini .calendar-calendar .date-heading h3 {
+  font-size:1.5em;
+}
+.calendar-mini .view-content .calendar-calendar .date-prev {
+  right:155px;
+}
+.calendar-mini .calendar-calendar tr, .calendar-mini .calendar-calendar table.mini td.empty {
+  background-color:#eee;
+}
+
+
+.calendar-calendar .month-view .full .week
+{
+  visibility: hidden;
+}

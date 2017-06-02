@@ -1,0 +1,34 @@
+/*$Id: image_caption.js,v 1.2.2.3 2010/02/03 07:50:25 davidwhthomas Exp $*/
+
+$(document).ready(function() {
+
+    $("img.caption").each(function(i) {
+
+        var imgwidth = $(this).width();
+
+        var imgheight = $(this).height();
+
+         var captiontext = $(this).attr('title');
+		 
+		 var alignment = $(this).attr('align');
+
+        if (alignment == undefined || alignment == '') {
+
+            alignment = $(this).css('float');
+
+        }
+		
+
+        $(this).removeAttr('align');
+
+        $(this).css('float', '');
+
+        $(this).wrap("<div class=\"image-caption-container\" style=\"float:" + alignment + "\"></div>");
+
+        $(this).parent().width(imgwidth);
+
+        $(this).parent().append("<div class=\"image-caption\">" + captiontext + "</div>");
+
+    });
+
+});
